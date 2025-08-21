@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vito Tweaks</title>
+<style>
+body { font-family: Arial, sans-serif; margin:0; background:#121212; color:#fff; }
+header { text-align:center; padding:50px 20px; background:#1f1f1f; }
+header h1 { font-size:50px; color:#9b59b6; margin-bottom:20px; }
+header img { width:400px; max-width:90%; margin:20px 0; transition: transform 1s; }
+header img:hover { transform: scale(1.05); }
+section { padding:50px 20px; }
+h2 { color:#9b59b6; margin-bottom:20px; text-align:center; }
+p { color:#ccc; }
+.plans { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; }
+.plan { background:#1f1f1f; padding:20px; border-radius:10px; width:300px; transition: transform 0.3s; }
+.plan:hover { transform: translateY(-5px); }
+.plan h3 { color:#fff; margin-bottom:10px; }
+.plan ul { list-style: none; padding:0; }
+.plan li { margin:5px 0; }
+.plan li::before { content: "✔ "; color: #9b59b6; }
+.plan li.not::before { content: "✖ "; color: red; }
+.plan button { margin-top:10px; padding:10px 20px; background:#9b59b6; color:#fff; border:none; border-radius:5px; cursor:pointer; }
+.plan button:hover { background:#8e44ad; }
+.faq { max-width:800px; margin:0 auto; }
+.faq-item { margin-bottom:20px; }
+.faq-item button { width:100%; text-align:left; background:#333; color:#fff; padding:10px; border:none; cursor:pointer; border-radius:5px; }
+.faq-item .answer { display:none; padding:10px; background:#1f1f1f; border-radius:5px; margin-top:5px; }
+.contact { text-align:center; margin-top:50px; }
+.contact a { margin:0 15px; display:inline-block; color:#fff; font-size:40px; text-decoration:none; }
+.contact a:hover { color:#9b59b6; }
+footer { text-align:center; padding:20px; background:#1f1f1f; margin-top:50px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Vito Tweaks</h1>
+  <img src="assets/pc.gif" alt="Animated PC setup">
+</header>
+
+<section>
+  <h2>OPTIMIZATION SERVICES</h2>
+  <p style="text-align:center; max-width:800px; margin:auto; margin-bottom:30px;">
+  Optimize your PC with Vito Tweaks! Choose from Premium, 0 Delay, or Ultimate to boost performance, reduce lag, and get the smoothest experience possible.
+  </p>
+  <div class="plans">
+    <!-- Premium -->
+    <div class="plan">
+      <h3>💜 PREMIUM – 2€</h3>
+      <h4 style="color:#ccc;">Boost speed, clean your system, and improve gaming performance.</h4>
+      <ul>
+        <li>Windows Optimization</li>
+        <li>Regedit Optimization</li>
+        <li>GPU & CPU Tweaks</li>
+        <li>RAM Boost</li>
+        <li>Game Performance Improvements</li>
+        <li>Background Services Reduction</li>
+        <li>Delay Optimization</li>
+        <li>Keyboard & Mouse Tweaks</li>
+        <li>Windows Debloating & Cleanup</li>
+        <li class="not">Advanced System Tweaks</li>
+        <li class="not">Maximum Performance Optimization</li>
+      </ul>
+      <p>Premium plan focuses on enhancing your system's core performance. It improves CPU, GPU, and RAM efficiency, reduces unnecessary background processes, and optimizes gaming settings. Perfect for general users who want a faster and smoother experience without making advanced system changes.</p>
+      <button onclick="window.open('https://discord.gg/FVkr7CZm','_blank')">Order via Discord</button>
+    </div>
+
+    <!-- Ultimate -->
+    <div class="plan">
+      <h3>💜 ULTIMATE – 5€</h3>
+      <h4 style="color:#ccc;">Get maximum performance and stability for your PC.</h4>
+      <ul>
+        <li>Everything in Premium</li>
+        <li>Advanced System Tweaks</li>
+        <li>Maximum Performance Optimization</li>
+        <li>Faster System Response & Stability</li>
+        <li>Better Multitasking & Gaming Performance</li>
+        <li>Fully Optimized Background Services</li>
+      </ul>
+      <p>Ultimate plan includes all features of Premium and 0 Delay, plus advanced system tweaks for peak performance. It boosts multitasking capabilities, enhances gaming performance, and fully optimizes background services. Perfect for users who want the absolute best from their PC with maximum stability and speed.</p>
+      <button onclick="window.open('https://discord.gg/FVkr7CZm','_blank')">Order via Discord</button>
+    </div>
+
+    <!-- 0 Delay -->
+    <div class="plan">
+      <h3>💜 0 DELAY – 3€</h3>
+      <h4 style="color:#ccc;">Eliminate input lag and enjoy instant responses.</h4>
+      <ul>
+        <li>Maximum system speed</li>
+        <li>Reduce all input delays</li>
+        <li>Optimized keyboard & mouse</li>
+        <li>Immediate performance boost</li>
+        <li>Minimal background services</li>
+      </ul>
+      <p>The 0 Delay plan is designed to eliminate input lag and ensure instant response times for your PC. Ideal for gamers and professionals who need precision and speed. It focuses on reducing delays in keyboard, mouse, and system processes for maximum efficiency.</p>
+      <button onclick="window.open('https://discord.gg/FVkr7CZm','_blank')">Order via Discord</button>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <h2>FAQ</h2>
+  <div class="faq-item">
+    <button>What is included in Premium?</button>
+    <div class="answer">
+      Premium includes Windows, GPU, CPU, RAM, game optimization, keyboard & mouse tweaks, and basic system cleaning.
+    </div>
+  </div>
+  <div class="faq-item">
+    <button>What is included in Ultimate?</button>
+    <div class="answer">
+      Ultimate includes everything in Premium plus advanced system tweaks for maximum performance, stability, and multitasking.
+    </div>
+  </div>
+  <div class="faq-item">
+    <button>What is 0 Delay?</button>
+    <div class="answer">
+      0 Delay plan eliminates input lag and optimizes system response for gaming and professional use.
+    </div>
+  </div>
+  <div class="faq-item">
+    <button>How do I order?</button>
+    <div class="answer">
+      Click "Order via Discord" on the plan you want, join the Discord, and send a message with your selection.
+    </div>
+  </div>
+  <div class="faq-item">
+    <button>Is it safe?</button>
+    <div class="answer">
+      Yes, all optimizations are safe, reversible, and designed to improve system performance.
+    </div>
+  </div>
+  <div class="faq-item">
+    <button>Do I need technical knowledge?</button>
+    <div class="answer">
+      No, our tweaks are designed for all users. You just choose a plan and follow instructions in Discord.
+    </div>
+  </div>
+  <div class="faq-item">
+    <button>How long does it take?</button>
+    <div class="answer">
+      Most tweaks can be applied in a few minutes after you send your request.
+    </div>
+  </div>
+  <div class="faq-item">
+    <button>Can I combine plans?</button>
+    <div class="answer">
+      Yes, you can order multiple plans through Discord and receive all requested optimizations.
+    </div>
+  </div>
+  <div class="faq-item">
+    <button>Do you support all Windows versions?</button>
+    <div class="answer">
+      Yes, our tweaks are compatible with Windows 10 and 11.
+    </div>
+  </div>
+  <div class="faq-item">
+    <button>Will my system be faster?</button>
+    <div class="answer">
+      Yes, after applying the tweaks, you will notice faster performance, reduced lag, and optimized system responsiveness.
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Contact & Socials</h2>
+  <a href="https://discord.gg/FVkr7CZm" target="_blank">Discord</a>
+  <a href="https://www.youtube.com/@Vito.dev1" target="_blank">YouTube</a>
+  <a href="https://www.tiktok.com/@egyvito" target="_blank">TikTok</a>
+</section>
+
+<footer>
+  &copy; 2025 Vito Tweaks
+</footer>
+
+<script>
+// FAQ toggle
+const faqButtons = document.querySelectorAll('.faq-item button');
+faqButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const answer = btn.nextElementSibling;
+    answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+  });
+});
+</script>
+
+</body>
+</html>
+
+
